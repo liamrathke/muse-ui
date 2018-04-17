@@ -2,22 +2,22 @@ import description from './README_EN.md'
 
 export default {
   description,
-  simpleExample: 'Simple example',
-  simpleExampleDesc: 'four types, success、info、warning、error',
-  defineExample: 'Customized example',
-  defineExampleDesc: 'customized content, component or others',
+  simpleExample: 'Basic Example',
+  simpleExampleDesc: 'There are four types of alerts: success, info, warning, and error. By default, these alerts are accompanied by a descriptive icon that conveys the alert\'s purpose to the user.',
+  defineExample: 'Customized Example',
+  defineExampleDesc: 'An alert can be customized by adding a close button or by changing/removing the descriptive icon itself.',
   props: {
-    type: 'component style, success、info、warning、error',
-    closeable: 'close or not',
-    showIcon: 'show icon or not'
+    type: 'The alert\'s style: success, info, warning, or error',
+    closeable: 'Whether the alert can be closed or not',
+    showIcon: 'Whether the alert\'s icon will be shown or not'
   },
   events: {
-    close: 'emit when close the alert'
+    close: 'Fired when the alert is closed'
   },
   slots: {
-    default: 'customized content',
-    description: 'customized description content',
-    icon: 'customized icon',
-    close: 'customized close content'
+    default: 'The alert\'s text content',
+    description: 'The alert\'s title',
+    icon: 'The alert\'s icon, from the Material Icons stylesheet',
+    close: 'If closeable, the alert\'s close button text'
   }
 }

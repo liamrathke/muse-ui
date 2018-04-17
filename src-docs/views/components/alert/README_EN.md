@@ -1,5 +1,5 @@
 ## Alert
 
-Alert help display some messages!
+Alerts display important messages to the user.
 
 ### Examples
